@@ -356,6 +356,14 @@ leaflet() %>%
 
 </details>
 
+<br>
 
 
+But remember; data can't always tell you **everything**...
+
+<br>
+
+```{r, echo=FALSE, out.width = '50%'}
+knitr::include_graphics("images/analysis.jpeg")
+```
 
