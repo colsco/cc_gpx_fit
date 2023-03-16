@@ -1,0 +1,40 @@
+p.caption {
+  font-size: 0.9em;
+  font-style: italic;
+  color: grey;
+  margin-right: 10%;
+  margin-left: 10%;
+  text-align: justify;
+}
+
+div.emphasis {
+  background-color:#e6f0ff;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+details.maths {
+  background-color:#90EE90;
+  border-radius: 5px;
+  padding: 20px;
+  border-style: solid;
+}
+
+blockquote.task {
+  background-color:#fadadd;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 0.9em;
+}
+
+h1, .h1 {
+  margin-top: 64px;
+}
+
+h2, .h2, h3, .h3 {
+  margin-top: 24px;
+}
+
+a:visited {
+  color: #6a51a3;
+}
