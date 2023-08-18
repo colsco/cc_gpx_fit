@@ -82,7 +82,7 @@ track <- as_tibble(gpx$tracks[[1]][[1]])
 
 head(track)
 ```
-![](images/gpx_tracks.png)        ###################################################################
+![](images/gpx_tracks.png)        
 
 So the data contains latitude and longitude, elevation and time observations.  The time column corresponds 
 with the time the `.gpx` track was created (maybe using a mapping website) and doesn't reflect the time an 
@@ -111,7 +111,7 @@ leaflet() %>%
 
 ```
 
-![](images/codeclan_britannia_track.png)        ###################################################################
+![](images/codeclan_britannia_track.png)        
 
 <br>
 
@@ -179,7 +179,7 @@ leaflet() %>%
     data = track_gpx)
 ```
 
-![](images/codeclan_britannia_track_elev.png)        ###################################################################
+![](images/codeclan_britannia_track_elev.png)        
 
 
 In addition to the previous code I've added `registerPlugin()` for the javascript plug-in that I want to use
@@ -229,7 +229,7 @@ If I try to view the activity data directly then I only get a fraction of the to
 activity
 ```
 
-![](images/activity_fit_file.png)        ###################################################################
+![](images/activity_fit_file.png)        
 
 
 The `.fit` file specification allows for almost 100 different types of data "message".  To view all of the 
@@ -240,7 +240,7 @@ message types stored within a specific file that are available for analysis you 
 listMessageTypes(activity)
 ```
 
-![](images/activity_messages.png)        ###################################################################
+![](images/activity_messages.png)        
 
 Usually working with `.fit` files we are going to be interested in certain types of data, typically 
 location, speed, elevation, etc. This type of data is classed as "records" and can be accessed using the 
@@ -252,7 +252,7 @@ activity_records <- records(activity)
 activity_records
 ```
 
-![](images/activity_records.png)        ###################################################################
+![](images/activity_records.png)        
 
 
 You will often see that `activity_records` contains a list of several tibbles.  This happens when the file 
@@ -273,7 +273,7 @@ all_activity_records <- records(activity) %>%
 all_activity_records
 ```
 
-![](images/all_activity_records.png)        ###################################################################
+![](images/all_activity_records.png)        
 
 
 This looks very much like the dataset I got from my `.gpx` file to plot in leaflet, and I can use 
@@ -303,7 +303,7 @@ track_fit %>%
  
 ```
 
-![](images/track_fit.png)        ###################################################################
+![](images/track_fit.png)        
 
 <br>
 
@@ -365,5 +365,5 @@ leaflet() %>%
 
 ```
 
-![](images/track_fit_overlay.png)        ###################################################################
+![](images/track_fit_overlay.png)        
 
